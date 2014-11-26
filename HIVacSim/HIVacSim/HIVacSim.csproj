@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BA2E04D7-DB02-431F-AA6C-3041AD85F34C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HIVacSim</RootNamespace>
+    <AssemblyName>HIVacSim</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Binaries\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\Binaries\Debug\HIVacSim.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Binaries\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>..\Binaries\Release\HIVacSim.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdjList.cs" />
+    <Compile Include="BookList.cs" />
+    <Compile Include="Disease.cs" />
+    <Compile Include="DistributionEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EnumsDef.cs" />
+    <Compile Include="Group.cs" />
+    <Compile Include="ListOfIds.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Population.cs" />
+    <Compile Include="PQueue.cs" />
+    <Compile Include="Relation.cs" />
+    <Compile Include="RIntArray.cs" />
+    <Compile Include="RPairArray.cs" />
+    <Compile Include="RPrsArray.cs" />
+    <Compile Include="Scenario.cs" />
+    <Compile Include="Simdata.cs" />
+    <Compile Include="Simulation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategies.cs" />
+    <Compile Include="Strategy.cs" />
+    <Compile Include="SWNInfo.cs" />
+    <Compile Include="TriangArray.cs" />
+    <Compile Include="Utility\DeviateFunction.cs" />
+    <Compile Include="Utility\DataFunction.cs" />
+    <Compile Include="Utility\MTRandom.cs" />
+    <Compile Include="Utility\Point3d.cs" />
+    <Compile Include="Utility\RandomDeviate.cs" />
+    <Compile Include="Utility\DataSummary.cs" />
+    <Compile Include="Utility\Stochastic.cs" />
+    <Compile Include="Vaccine.cs" />
+    <Compile Include="Vaccines.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DistributionEditor.resx">
+      <DependentUpon>DistributionEditor.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Example.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HIVacSim.cd" />
+    <None Include="HIVacSimData.xsd">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

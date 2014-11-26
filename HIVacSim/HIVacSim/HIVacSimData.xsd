@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns:sim="urn:HIVacSim"
+            targetNamespace="urn:HIVacSim"
+  elementFormDefault="qualified">
+  <xsd:element name="HIVacSim">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Scenario" minOccurs="1" maxOccurs="1">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Description" type="xsd:string" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="SimClock" type="xsd:string" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="RunDuration" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="NumberOfRuns" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="WarmUpType" type="xsd:string" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="WarmUp" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="WarmUpMaxConcurrent" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="WarmUpPrConcurrent" type="xsd:double" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="WarmUpInfected" type="sim:Stochastic" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="Speed" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="MaxDelay" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="Animation" type="xsd:boolean" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="AutoSeed" type="xsd:boolean" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="CustomSeed" type="xsd:unsignedInt" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="PLNumerical" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="PLEstimate" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="PLAlgorithm" type="xsd:double" minOccurs="1" maxOccurs="1" />
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="Disease" minOccurs="1" maxOccurs="1">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="Male2Female" type="xsd:double" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="Female2Male" type="xsd:double" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="Male2Male" type="xsd:decimal" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="LifeInfection" type="xsd:boolean" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="STDDuration" minOccurs="1" maxOccurs="1" type="sim:Stochastic"></xsd:element>
+              <xsd:element name="AllowReinfection" type="xsd:boolean" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="Mortality" type="xsd:double" minOccurs="1" maxOccurs="1" />
+              <xsd:element name="LifeExpectancy" minOccurs="1" maxOccurs="1" type="sim:Stochastic"></xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="Population" minOccurs="1" maxOccurs="1">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Group" minOccurs="0" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="Id" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Topology" type="xsd:string" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Alpha" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Beta" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Radius" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Distance" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Degrees" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Size" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Age" type="sim:Stochastic" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="LifeExpectancy" type="sim:Stochastic" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="STDPrevalence" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="STDAge" type="sim:Stochastic" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="STDTest" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Female" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Male" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Homosexual" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="MaxConcurrent" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="PrConcurrent" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="PrNewPartner" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="PrCasual" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="PrInternal" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="StbDuration" type="sim:Stochastic" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="StbTransitory" type="sim:Stochastic" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="StbContacts" type="sim:Stochastic" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="StbSafeSex" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="CslDuration" type="sim:Stochastic" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="CslContacts" type="sim:Stochastic" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="CslSafeSex" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                  </xsd:sequence>
+                  <xsd:attribute name="Name" type="xsd:string" />
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="Count" type="xsd:integer" />
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="AdjMatrix" minOccurs="1" maxOccurs="1">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Cell" minOccurs="0" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence></xsd:sequence>
+                  <xsd:attribute name="Row" type="xsd:integer" />
+                  <xsd:attribute name="Column" type="xsd:integer" />
+                  <xsd:attribute name="Data" type="xsd:double" />
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="Rows" type="xsd:integer" />
+            <xsd:attribute name="Columns" type="xsd:integer" />
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="Vaccines" minOccurs="1" maxOccurs="1">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Vaccine" minOccurs="0" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="Id" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Effectiveness" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Lifetime" type="xsd:boolean" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Length" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="UsedBy" type="xsd:string" minOccurs="1" maxOccurs="1" />
+                  </xsd:sequence>
+                  <xsd:attribute name="Name" type="xsd:string" />
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="Count" type="xsd:integer" />
+          </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="Interventions" minOccurs="1" maxOccurs="1">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Strategy" minOccurs="0" maxOccurs="unbounded">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="Id" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Active" type="xsd:boolean" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Strategy" type="xsd:string" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Groups" type="xsd:string" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Clock" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Population" type="xsd:double" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="Vaccine" type="xsd:integer" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="HIVTested" type="xsd:boolean" minOccurs="1" maxOccurs="1" />
+                    <xsd:element name="HIVResult" type="xsd:string" minOccurs="1" maxOccurs="1" />
+                  </xsd:sequence>
+                  <xsd:attribute name="Name" type="xsd:string" />
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="Count" type="xsd:integer" />
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+      <xsd:attribute name="Title" type="xsd:string" />
+      <xsd:attribute name="by" type="xsd:string" />
+      <xsd:attribute name="Version" type="xsd:string" />
+    </xsd:complexType>
+  </xsd:element>
+  <xsd:complexType name="Stochastic">
+    <xsd:complexContent>
+      <xsd:restriction base="xsd:anyType">
+        <xsd:sequence>
+          <xsd:element name="Distribution" type="xsd:string" />
+          <xsd:element name="ParamOne" type="xsd:double" />
+          <xsd:element name="ParamTwo" type="xsd:double" />
+          <xsd:element name="ParamThree" type="xsd:double" />
+          <xsd:element name="ParamFour" type="xsd:double" />
+        </xsd:sequence>
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>

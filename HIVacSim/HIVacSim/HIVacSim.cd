@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HIVacSim.AdjList" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAEAAAAAAAAAACAAABARAAAAAAAABCACAAABRAAA=</HashCode>
+      <FileName>AdjList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.BookList" Collapsed="true">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAEAAAAAABAAACACABARAAAAAAAABKACABABRAAA=</HashCode>
+      <FileName>BookList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.Disease" Collapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGIAAABQAKAAAAgAAAAATAAAUAAAIEAAABAGAAAAA=</HashCode>
+      <FileName>Disease.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.Group" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DGAKsQihAgCAjAgEWErEDiTDsHQQEB3SiOowwkLAIAg=</HashCode>
+      <FileName>Group.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.ListOfIds" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEJAAAAABAAAAAAECAAABAQAAAAAAAAAAACAAABAIAA=</HashCode>
+      <FileName>ListOfIds.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.Person" Collapsed="true">
+    <Position X="6.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwFWEAAAVAAAAACEQEJACICEAAAAAA9wACoEhERCIAg=</HashCode>
+      <FileName>Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.Population" Collapsed="true">
+    <Position X="8.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACIAgAAACABAAIQAAAAgAAEAAASAAQhAAAI=</HashCode>
+      <FileName>Population.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.PQueue" Collapsed="true">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAEAAAAAAAAABAAAAAAAAAAAAgA=</HashCode>
+      <FileName>PQueue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.Relation" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAQAACAgAAABAAAJAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Relation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.RIntArray" Collapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBAAAAABgAAAAAAAAAgAgQAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>RIntArray.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.RPairArray" Collapsed="true">
+    <Position X="6.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBAAAAABgAQAAAACAAgAAQAABAAAAAAAACAAAIAAEA=</HashCode>
+      <FileName>RPairArray.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.RPrsArray" Collapsed="true">
+    <Position X="8.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBAAAAABgAAAAQAAAAgAAQAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>RPrsArray.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.Scenario" Collapsed="true">
+    <Position X="13.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>B5FAAQAIQiTjEBwA4AhpgSARBZSogRIhCEQgQNBEBAQ=</HashCode>
+      <FileName>Scenario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.SimEventArgs" Collapsed="true">
+    <Position X="10.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAIAAAAAA=</HashCode>
+      <FileName>Simulation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.SimulationException" Collapsed="true">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Simulation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.Simulation" Collapsed="true">
+    <Position X="13.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>PmIEIIIERASxpVIBAgMhQBAEAq5EdAEACJIAglQgDwM=</HashCode>
+      <FileName>Simulation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.Strategies" Collapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEIAAAAAAAAAAAAACAAABAQAgAAAAAEAAACAAABAAAI=</HashCode>
+      <FileName>Strategies.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.Strategy" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACIUEAAAAABAAoCADAAIQAAAAAUEAgAAgQBAAAAgA=</HashCode>
+      <FileName>Strategy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.TriangArray" Collapsed="true">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAACECAAgAABAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>TriangArray.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.Vaccine" Collapsed="true">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACIAACAAAABAAAAABAAARAAQAAEEAABEEAAAAAAAQ=</HashCode>
+      <FileName>Vaccine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HIVacSim.Vaccines" Collapsed="true">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUIAAAAAAAAAAAAACAAABAQAAAAAAAEAAACAAABAAAI=</HashCode>
+      <FileName>Vaccines.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="HIVacSim.RPair" Collapsed="true">
+    <Position X="6.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAEAgAAAAAEAAgAACAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RPairArray.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="HIVacSim.SimData" Collapsed="true">
+    <Position X="8.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAABAAIABAAAgBAAINiACAAAMAAACkElIAAEAANICAA=</HashCode>
+      <FileName>Simdata.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="HIVacSim.SWNInfo" Collapsed="true">
+    <Position X="10.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAgAAAgAAASAAUAAAAABBQBBAAAAEQEAABAAICEAA=</HashCode>
+      <FileName>SWNInfo.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="HIVacSim.EPartners" Collapsed="true">
+    <Position X="10.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>EnumsDef.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HIVacSim.ESTDStatus" Collapsed="true">
+    <Position X="12" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAEAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>EnumsDef.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HIVacSim.EGender" Collapsed="true">
+    <Position X="6.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>EnumsDef.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HIVacSim.ERelation" Collapsed="true">
+    <Position X="12" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAABAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>EnumsDef.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HIVacSim.ETopology" Collapsed="true">
+    <Position X="6.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>EnumsDef.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HIVacSim.ESimClock" Collapsed="true">
+    <Position X="13.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAIAAACAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>EnumsDef.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HIVacSim.ESimStatus" Collapsed="true">
+    <Position X="10.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgIAAAAAAAAAMAAAAAAAAAAAAAAAAIAAAAAAAAAAQ=</HashCode>
+      <FileName>EnumsDef.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HIVacSim.ESimEvent" Collapsed="true">
+    <Position X="6.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAACAAAAAAAAAAQAAAAAAAAAAAEAACACAAAAEAA=</HashCode>
+      <FileName>EnumsDef.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HIVacSim.EWarmup" Collapsed="true">
+    <Position X="8.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAEEAAA=</HashCode>
+      <FileName>EnumsDef.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HIVacSim.ESimExit" Collapsed="true">
+    <Position X="8.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAIAAAAAAAAAAAgAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>EnumsDef.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HIVacSim.EHIVTest" Collapsed="true">
+    <Position X="8.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAgAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>EnumsDef.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="HIVacSim.EStrategy" Collapsed="true">
+    <Position X="13.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>EnumsDef.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="cf726227-9ddb-44d4-82ae-54a0d5b877c9" revisionNumber="1">
+  <developerConceptualDocument 
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" 
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <introduction>
+      <para>It has long been recognised that the structure of social networks 
+      plays an important role in the dynamics of disease propagation. The spread 
+      of HIV results from a complex network of social interactions and other 
+      factors related to culture, sexual behaviour, demography, geography and 
+      disease characteristics, as well as the availability, accessibility and 
+      delivery of healthcare. The small world phenomenon has been used for
+      representing social network interactions. It states that, given some 
+      random connections, the degrees of separation between any two individuals 
+      within a population can be very small.</para>
+      <para>The HIVacSim project presents a discrete event simulation model 
+      which uses a variant of the small world network model to represent social 
+      interactions and the sexual transmission of HIV within a population.</para>
+      <para>The model structure is described in [1], which uses HIVacSim
+        to demonstrate the importance of the choice of topology and initial
+        distribution of infection, and capture the direct and non-linear
+        relationship between the probability of a casual partnership (small
+        world randomness parameter) and the spread of HIV. It also illustrate
+        the use of our model for the evaluation of interventions such as the
+        promotion of safer sex and introduction of a vaccine.</para>
+    </introduction>
+    
+    <section>
+      <title>Reference</title>
+      <content>
+        <para>[1] - Vieira, I., Cheng, R., Harper, P. and de Senna, V. (2010), 
+        "Small world network models of the dynamics of HIV infection", 
+        Annals of Operations Research, 178: 173-200.</para>
+      </content>
+    </section>
+    
+    <section>
+      <title>Licence</title>
+      <content>
+        <para>The MIT License (MIT)</para>
+        <para>Copyright (c) 2014 Israel Vieira</para>
+        <para>
+          Permission is hereby granted, free of charge, to any person obtaining a copy
+          of this software and associated documentation files (the "Software"), to deal
+          in the Software without restriction, including without limitation the rights
+          to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+          copies of the Software, and to permit persons to whom the Software is
+          furnished to do so, subject to the following conditions:
+        </para>
+        <para>
+          The above copyright notice and this permission notice shall be included in all
+          copies or substantial portions of the Software.
+        </para>
+        <para>
+          THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+          IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+          FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+          AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+          LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+          OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+          SOFTWARE.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>Example</title>
+      <content>
+        <para>
+          The HIVacSim model can easily be used from within any .NET language.
+        </para>
+        <code source="..\HIVacSim.Console\Program.cs" language="cs" />
+      </content>
+    </section>
+
+    <relatedTopics>
+      <link xlink:href="2a7a1c8d-6337-4da2-8850-579af105ac5e" />
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIVacSim", "HIVacSim\HIVacSim.csproj", "{BA2E04D7-DB02-431F-AA6C-3041AD85F34C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{008F056D-AA58-4DAF-AD2F-4DCC71685752}"
+	ProjectSection(SolutionItems) = preProject
+		Data\MultiGroupScenario.xml = Data\MultiGroupScenario.xml
+		Data\SingleGroupScenario.xml = Data\SingleGroupScenario.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HIVacSim.Console", "HIVacSim.Console\HIVacSim.Console.csproj", "{0A81EB54-6EF7-4C6C-9C35-22D67CF3B9A1}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "HIVacSim.Help", "HIVacSim.Help\HIVacSim.Help.shfbproj", "{926200DE-44D8-4636-ABD3-4A44AAC04DC5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA2E04D7-DB02-431F-AA6C-3041AD85F34C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA2E04D7-DB02-431F-AA6C-3041AD85F34C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA2E04D7-DB02-431F-AA6C-3041AD85F34C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA2E04D7-DB02-431F-AA6C-3041AD85F34C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A81EB54-6EF7-4C6C-9C35-22D67CF3B9A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A81EB54-6EF7-4C6C-9C35-22D67CF3B9A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A81EB54-6EF7-4C6C-9C35-22D67CF3B9A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A81EB54-6EF7-4C6C-9C35-22D67CF3B9A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{926200DE-44D8-4636-ABD3-4A44AAC04DC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{926200DE-44D8-4636-ABD3-4A44AAC04DC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{926200DE-44D8-4636-ABD3-4A44AAC04DC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{926200DE-44D8-4636-ABD3-4A44AAC04DC5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
